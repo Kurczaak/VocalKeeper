@@ -10,10 +10,21 @@ dependencies:
   flutter:
     sdk: flutter
 
+  chicken_open_ai:
+    git:
+      url: https://github.com/Kurczaak/chicken_open_ai.git
+      ref: main
+      
+  file_saver: ^0.2.13
+  get_it: ^7.7.0
+  injectable: ^2.4.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  injectable_generator: ^2.6.1
+  build_runner: ^2.4.9
 
 flutter:
   uses-material-design: true
