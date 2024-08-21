@@ -18,7 +18,11 @@ class SaveSpeechUseCase {
     FileExtension fileExtension = FileExtension.aac,
     Voices voice = Voices.fable,
   }) async {
-    final bytes = await _textToSpeechRepository.speak(text);
+    final bytes = await _textToSpeechRepository.speak(
+      text,
+      voice: voice,
+      fileExtension: fileExtension,
+    );
     await _fileSaverRepository.saveFile(
       bytes: bytes,
       fileName: fileName,
